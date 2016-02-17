@@ -7,10 +7,42 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.slavyanin.example.u_risehomework.MainActivity">
+    tools:context="com.slavyanin.example.u_risehomework.MainActivity"
+    android:background="#5074df">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Hello World!"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textTitle" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/background_color" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="COUNT TEXT"
+        android:id="@+id/textCount"
+        android:layout_below="@+id/textTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp" />
+
+    <Button
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:id="@+id/button"
+        android:onClick="onClick"
+        android:background="@drawable/push_button"
+        android:layout_below="@+id/textCount"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
