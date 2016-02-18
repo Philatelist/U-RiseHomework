@@ -19,14 +19,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        countButton = (Button) findViewById(R.id.button);
-        countText = (TextView) findViewById(R.id.textCount);
-
-        countButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                countText.setText("Count - " + ++count);
-            }
-        });
     }
+
+    public void onClick(View v) {
+        TextView textView = (TextView) findViewById(R.id.textCount);
+        textView.setText("Count " + count++);
+    }
+
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main);
+//
+//        countButton = (Button) findViewById(R.id.button);
+//        countText = (TextView) findViewById(R.id.textCount);
+//
+//        countButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                countText.setText("Count - " + ++count);
+//            }
+//        });
+//    }
+
+
 }
